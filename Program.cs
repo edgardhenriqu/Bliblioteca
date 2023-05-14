@@ -11,7 +11,7 @@ class Program
 
         while (opcao != 0)
         {
-            Console.WriteLine("\n\nEscolha a opção que deseja:");
+            Console.WriteLine("\n\nCONTROLE DE ESTOQUE - LIVRARIA");
             Console.WriteLine("1. Novo");
             Console.WriteLine("2. Listar Produtos");
             Console.WriteLine("3. Remover Produto");
@@ -48,9 +48,9 @@ class Program
             }
             else if (opcao == 2)
             {
-                for (int cont = 1; cont < posicao; cont++)
+                for (int cont = 0; cont < posicao; cont++)
                 {
-                    Console.WriteLine($"{cont}. {livros[cont].Nome} ({livros[cont].Preco})" +", Quantidade: " + livros[cont].Quantidade);
+                    Console.WriteLine($"{cont}. {livros[cont].Nome} ({livros[cont].Preco})" +", Quantidade: " + livros[cont].Quantidade + " Autor: " + livros[cont].Autor + " Genero: " + livros[cont].Genero);
                 }
             }
             else if (opcao == 3)
